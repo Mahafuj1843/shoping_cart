@@ -10,7 +10,7 @@ import Newsletter from './layout/Newsletter';
 import Footer from './layout/Footer';
 import Header from './layout/Header';
 import CheckoutPage from './pages/CheckoutPage';
-import ScrollTop from './helper/scrollTop';
+import ScrollTop from './helper/ScrollTop';
 
 function App() {
 
