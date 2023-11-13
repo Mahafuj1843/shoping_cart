@@ -13,7 +13,7 @@ export const cartSlice = createSlice({
             state.Cart = action.payload
         },
         addToCart: (state, action) => {
-            var temp = state.Cart.find((item) => item.productId === action.payload._id)
+            var temp = state.Cart.find((item) => item._id === action.payload._id)
             if (temp) SuccessToast('Product already added to cart.')
             else {
                 state.Cart = [...state.Cart, { ...action.payload, qty: 1 }]
